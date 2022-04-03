@@ -6,3 +6,18 @@ pipelineJob('pipelineJob') {
         }
     }
 }
+
+pipelineJob('build-job') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/Dylar/TestSpringApi.git'
+                    }
+                    branch 'master'
+                }
+            }
+        }
+    }
+}
