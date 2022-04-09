@@ -7,22 +7,8 @@
 //    }
 //}
 //
-//pipelineJob('build-job') {
-//    definition {
-//        cpsScm {
-//            scm {
-//                git {
-//                    remote {
-//                        url 'https://github.com/Dylar/TestSpringApi.git'
-//                    }
-//                    branch 'master'
-//                }
-//            }
-//        }
-//    }
-//}
 
-pipelineJob('buildInDocker') {
+pipelineJob('build-qcar-backend') {
     definition {
         cpsScm {
             scm {
